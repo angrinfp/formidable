@@ -1,0 +1,144 @@
+body {
+	margin: 0;
+	width: 100%;
+	overflow: hidden;
+}
+
+.container {
+	margin: 0 auto;
+	width: 80%;
+}
+
+h1 {
+	color: #fff;
+	font-family: 'Playfair Display', serif;
+	font-size: 36pt;
+	margin: 0;
+}
+
+h2,
+h3,
+h4,
+p,
+a {
+	font-family: 'Roboto', sans-serif;
+	margin: 0;
+}
+
+h2 {
+	font-size: 24pt;
+}
+
+h3 {
+	color: #fff;
+	font-size: 22pt;
+}
+
+h4 {
+	color: #9b9b9b;
+	font-size: 18pt;
+}
+
+p {
+	color: #4a4a4a;
+	font-size: 20pt;
+}
+
+header {
+	background: #4abde2;   
+    background: -webkit-linear-gradient(left, #3ea0c0 , #4abde2 , #6ecae7);
+    background: -o-linear-gradient(right, #3ea0c0 , #4abde2, #6ecae7);
+    background: -moz-linear-gradient(right, #3ea0c0 , #4abde2, #6ecae7);
+    background: linear-gradient(to right, #3ea0c0 , #4abde2 , #6ecae7);
+    width: 100%;
+}
+
+header nav {
+	align-items: center;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin: 0 auto;
+	padding-bottom: 20px;
+	padding-top: 20px;
+	width: 80%;
+}
+
+nav a {
+	color: #fff;
+	cursor: pointer;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+nav a:hover {
+	text-decoration: underline;
+}
+
+nav a:focus {
+	color: #3ea0c0;
+	outline: none;
+	text-decoration: underline;
+}
+
+.top-content {
+	align-items: flex-start;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.h-content {
+	align-items: flex-start;
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding-bottom: 150px;
+	padding-left: 140px;
+	padding-top: 150px;
+}
+
+.h-content p {
+	color: #fff;
+	font-size: 18pt;
+	margin-bottom: 40px;
+	margin-top: 10px;
+}
+
+.h-content button {
+	background: transparent;
+	border: 2px solid #fff;
+	border-radius: 20px;
+	color: #fff;
+	cursor: pointer;
+	font-size: 18pt;
+	padding-bottom: 10px;
+	padding-left: 40px;
+	padding-right: 40px;
+	padding-top: 10px;
+	text-transform: uppercase;
+}
+
+.h-content button:hover {
+	background: #fff;
+	color: #3ea0c0;
+}
+
+.h-content button:focus {
+	background: #fff;
+	color: #3ea0c0;
+	opacity: .5;
+	outline: none;
+}
+
+
+.h-image {
+	margin-bottom: -165px;
+	margin-right: -165px;
+	margin-top: 120px;
+}
+
+
+
+
