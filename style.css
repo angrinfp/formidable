@@ -1,18 +1,19 @@
 body {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
 	margin: 0;
 	width: 100%;
 }
 
-.container {
-	margin: 0 auto;
-	width: 80%;
+h1 {
+	font-family: 'Playfair Display', serif;
+	margin: 0;
 }
 
-h1 {
+header h1 {
 	color: #fff;
-	font-family: 'Playfair Display', serif;
-	font-size: 36pt;
-	margin: 0;
+	font-size: 46pt;
 }
 
 h2,
@@ -29,7 +30,7 @@ h2 {
 }
 
 h3 {
-	color: #fff;
+	color: #9b9b9b;
 	font-size: 22pt;
 }
 
@@ -131,17 +132,34 @@ nav a:focus {
 	outline: none;
 }
 
-
-.h-image {
-	
-}
-
 .h-image img {
 	position: absolute;
 	right: -165px;
 	top: 100px;
 }
 
+.wired {
+	align-items: center;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding-bottom: 10rem;
+	padding-top: 10rem;
+	text-align: center;
+	width: 70%;
+}
 
+.wired h1 {
+	color: #000;
+	font-size: 36pt;
+	margin-bottom: 2rem;
+	margin-top: 2rem;
+}
 
-
+.wired h3 {
+	align-self: flex-end;
+}
+.wired h4 {
+	text-transform: uppercase;
+}
