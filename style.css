@@ -163,3 +163,26 @@ nav a:focus {
 .wired h4 {
 	text-transform: uppercase;
 }
+
+.design-collect {
+	align-items: center;
+	background: #f9f9f9;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: center;
+	padding-bottom: 3rem;
+	padding-top: 3rem;
+	width: 100%;
+}
+
+.d-c {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 80%;
+}
+
+.design-collect h4 {
+	color: #000;
+	margin-bottom: 1rem;
+}
