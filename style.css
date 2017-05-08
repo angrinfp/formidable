@@ -3,6 +3,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	margin: 0;
+	overflow-x: hidden;
 	width: 100%;
 }
 
@@ -135,7 +136,7 @@ nav a:focus {
 .h-image img {
 	position: absolute;
 	right: -165px;
-	top: 100px;
+	top: 112px;
 }
 
 .wired {
