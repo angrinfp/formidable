@@ -141,6 +141,7 @@ nav a:focus {
 
 .wired {
 	align-items: center;
+	background: #fff;
 	box-sizing: border-box;
 	display: flex;
 	flex-direction: column;
@@ -190,6 +191,7 @@ nav a:focus {
 
 footer {
 	align-items: center;
+	background: #fff;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
@@ -214,4 +216,174 @@ footer a:focus {
 	color: #3ea0c0;
 	outline: none;
 	text-decoration: underline;
+}
+
+@media(max-width: 1450px) {
+	.design,
+	.collect {
+		width: 500px;
+	}
+
+	.design-img img,
+	.collect-img img {
+		width: 100%;
+	}
+}
+
+@media(max-width: 1410px) {
+	.h-content {
+		padding-left: 70px;
+	}
+}
+
+@media(max-width: 1330px) {
+	.h-content {
+		padding-bottom: 90px;
+		padding-top: 90px;
+		width: 500px;
+	}
+
+	.d-c {
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+	}
+
+	.design {
+		margin-bottom: 80px;
+	}
+
+	.design,
+	.collect {
+		width: 100%;
+	}
+
+	.design-img img,
+	.collect-img img {
+		width: 60%;
+	}
+}
+
+@media(max-width: 1200px) {
+	.h-image img {
+		top: 140px;
+		width: 750px;
+
+	}
+}
+
+@media(max-width: 1100px) {
+	.h-content {
+		width: 430px;
+	}
+
+	.h-image img {
+		width: 700px;
+		top: 170px;
+	}
+
+	.design-img img,
+	.collect-img img {
+		width: 80%;
+	}
+}
+
+@media(max-width: 1000px) {
+	.h-content {
+		align-items: center;
+		flex-direction: column;
+		justify-content: center;
+		padding-bottom: 450px;
+		padding-left: 0;
+		padding-top: 80px;
+		width: 100%;
+	}
+
+	.h-image img {
+		right: -60px;
+		top: 390px;
+		width: 750px;
+	}
+}
+
+@media(max-width: 770px) {
+	.h-content h1 {
+		font-size: 36pt;
+	}
+
+	.wired h1 {
+		font-size: 26pt;
+	}
+
+	h2 {
+		font-size: 20pt;
+	}
+
+	h3 {
+		font-size: 18pt;
+	}
+
+	h4 {
+		font-size: 16pt;
+	}
+
+	p {
+		font-size: 18pt;
+	}
+
+	.h-content {
+		padding-bottom: 400px;
+		text-align: center;
+	}
+
+	.h-image img {
+		right: 0;
+		width: 600px;
+	}
+
+	.design-img img,
+	.collect-img img {
+		width: 100%;
+	}
+
+	.wired h3 {
+		align-self: center;
+	}
+}
+
+@media(max-width: 660px) {
+	.h-content {
+		box-sizing: border-box;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.h-content button {
+		width: 100%;
+	}
+
+	footer {
+		flex-direction: column;
+	}
+
+	footer a {
+		margin-bottom: 20px;
+	}
+}
+
+@media(max-width: 653px) {
+	.h-content {
+		padding-bottom: 370px;
+	}
+}
+
+@media(max-width: 542px) {
+	.h-content {
+		padding-bottom: 335px;
+	}
+
+	.h-image img {
+		top: 450px;
+		width: 520px;
+	}
 }
