@@ -2,55 +2,78 @@
 <html>
 	<head>
 		<meta charset="utf-8">
+		<meta name="viewport" content="width=100%, initial-scale=1">
+		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<link href="https://fonts.googleapis.com/css?family=Playfair+Display|Roboto:300,400" rel="stylesheet">
 		<title></title>
+		
 	</head>
 	<body>
-	    <header>
-	    	<nav>
-				<div class="logo">
-					<img src="assets/Icons/PNGs/logo-white.png">
-				</div>
-			   	<a href="#">Login</a>
-			</nav>
-			<div class="top-content">
-			  	<div class="h-content">
-			   		<h1>Create beautiful forms</h1>
-			   		<p>Increase response rate & quality with design that delights</p>
-			   		<button>sign up</button>
-			   	</div>
-			   	<div class="h-image">
-				   	<img src="assets/Images/image-devices.png">
-				</div>
+	    <header class="container-fluid">
+	    	<div class="container">
+		    	<nav class="row">
+					<div class="logo col-md-11">
+						<img src="assets/Icons/PNGs/logo-fullColor.png">
+					</div>
+				   	<div class="col-md-1"><a href="#">Login</a></div>
+				</nav>
 			</div>
 	    </header>
-	    <section class="wired">
-	    	<h4>What the market is saying</h4>
-	    	<h1>84% of all companies use data colection software that hasn't been updated in at least 6 months."</h1>
-	    	<h3>- Wired</h3>
-	    </section>
-	    <section class="design-collect">
-	    	<div class="d-c">
-	    		<div class="design">
-		    	<h4>Design surveys with a variety of question formats</h4>
-		    	<div class="design-img">
-		    		<img src="assets/Images/image-questions.png">
-		    	</div>
-		    	</div>
-		    	<div class="collect">
-		    		<h4>Collect data in tidy spreadsheets</h4>
-		    		<div class="collect-img">
-		    			<img src="assets/Images/image-spreadsheets.png">
-		    		</div>
-		    	</div>
-	    	</div>
-	    </section>
-	    <footer>
-		    <a href="">About</a>
-		    <a href="">Terms & Conditions</a>
-		    <a href="">Privacy</a>
-		    <a href="">Contact Us</a>
-	    </footer>
+	    <nav class="container-fluid t-nav">
+	    	<div class="container">
+				<ul class="row">
+					<li class="col-md-1"><a href="">edit</a></li>
+					<li class="col-md-1"><a href="">view</a></li>
+					<li class="col-md-1"><a href="">responses</a></li>
+				</ul>
+			</div>
+		</nav>
+
+		<section class="container">
+			<div class="prefer row">
+				<div class="col-md-7">
+					<h1>What kind of restaurants do you prefer?</h1>
+					<p>A set of questions exploring qualities of your favorite restaurants</p>
+				</div>
+			</div>
+			<div class="name row">
+				<div class="col-md-7">
+					<h3>What is your name?</h3>
+					<input type="text" name="name">
+					<p>Your full name please.</p>
+				</div>
+			</div>
+			<div class="quality row">
+				<div class="col-md-7">
+					<h3>What is the single most important quality of a restaurant?</h3>
+					<p>Think hard! You can only choose one.</p>
+				</div>
+			</div>
+			<div class="grey-sec row">
+				<div class="col-md-7">
+					<form>
+						<label id="question">Question Title</label>
+						<input type="text" name="question" for="question" placeholder="Describe the qualities of your favorite restaurant">
+						<label id="help">Help Text</label>
+						<input type="text" name="help" for="help" placeholder="Be as descriptive as possible">
+						<label id="q-type">Question type</label>
+						<input type="text" name="q-type" for="q-type" placeholder="Select">
+						<button>Save</button>
+					</form>
+				</div>
+			</div>
+			<div class="add-q row">
+				<div class="col-md-12">
+					<h2>Add a question</h2>
+				</div>
+				<div class="col-md-3">
+
+				</div>
+			</div>
+		</section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 	</body>
 </html>
