@@ -13,10 +13,10 @@
 	    <header class="container-fluid">
 	    	<div class="container">
 		    	<nav class="row">
-					<div class="logo col-md-11">
+					<div class="logo col-md-11 col-sm-11 col-xs-11">
 						<img src="assets/Icons/PNGs/logo-fullColor.png">
 					</div>
-				   	<div class="col-md-1"><a href="#">Login</a></div>
+				   	<div class="col-md-1 col-sm-1 col-xs-1"><a href="#"><span class="login">Login</span></a><img src="./assets/Icons/PNGs/burger-regular.png" class="login-burger"></div>
 				</nav>
 			</div>
 	    </header>
@@ -32,43 +32,70 @@
 
 		<section class="container">
 			<div class="prefer row">
-				<div class="col-md-7">
+				<div class="col-md-8">
 					<h1>What kind of restaurants do you prefer?</h1>
 					<p>A set of questions exploring qualities of your favorite restaurants</p>
 				</div>
 			</div>
 			<div class="name row">
-				<div class="col-md-7">
+				<div class="col-md-8">
 					<h3>What is your name?</h3>
-					<input type="text" name="name">
-					<p>Your full name please.</p>
+					<input type="text" name="name" id="nombre">
+					<h4>Your full name please.</h4>
 				</div>
 			</div>
 			<div class="quality row">
-				<div class="col-md-7">
+				<div class="col-md-8">
 					<h3>What is the single most important quality of a restaurant?</h3>
-					<p>Think hard! You can only choose one.</p>
+					<ul>
+						<li><input type="radio" id="loud"> <label for="loud">How loud or quiet it is</label></li>
+						<li><input type="radio" id="drink"> <label for="drink">The drink selection</label></li>
+						<li><input type="radio" id="f-quality"> <label for="f-quality">The quality of the food</label></li>
+						<li><input type="radio" id="dessert"> <label for="dessert">The dessert</label></li>
+						<li><input type="radio" id="other"> <label for="other">Other:</label> <input type="text" name="other" id="t-other"></li>
+					</ul>
+					<h4>Think hard! You can only choose one.</h4>
 				</div>
 			</div>
 			<div class="grey-sec row">
-				<div class="col-md-7">
+				<div class="col-md-8 col-sm-12 col-xs-12">
 					<form>
-						<label id="question">Question Title</label>
-						<input type="text" name="question" for="question" placeholder="Describe the qualities of your favorite restaurant">
-						<label id="help">Help Text</label>
-						<input type="text" name="help" for="help" placeholder="Be as descriptive as possible">
-						<label id="q-type">Question type</label>
-						<input type="text" name="q-type" for="q-type" placeholder="Select">
-						<button>Save</button>
+						<ul class="container">
+							<li class="row">
+								<label class="col-md-4 col-sm-10 col-xs-12">Question Title</label>
+								<input type="text" name="question" placeholder="Describe the qualities of your favorite restaurant" class="col-md-7 col-sm-10 col-xs-12 input-class">
+							</li>
+							<li class="row">
+								<label class="col-md-4 col-sm-10 col-xs-12">Help Text</label>
+								<input type="text" name="help" placeholder="Be as descriptive as possible" class="col-md-7 col-sm-10 col-xs-12 input-class">
+							</li>
+							<li class="row dropdown">
+								<label class="col-md-4 col-sm-10 col-xs-12">Question type</label>
+								<input type="dropdown" name="select" placeholder="Select" class="col-md-7 col-sm-10 col-xs-12 input-class">
+							</li>
+							<button class="col-md-2 col-sm-10 col-xs-12 save">Save</button>
+						</ul>
 					</form>
 				</div>
 			</div>
-			<div class="add-q row">
-				<div class="col-md-12">
-					<h2>Add a question</h2>
-				</div>
-				<div class="col-md-3">
 
+			<div class="add-q row">
+				<div class="col-md-11">
+					<h3>Add a question</h3>
+				</div>
+				<div class="row">
+					<div class="col-md-3 col-sm-6 col-xs-12">
+						<p class="ovalo">Single Line <img src="./assets/Icons/PNGs/singleLine-regular.png" class="img-reg"><img src="assets/Icons/PNGs/singleLine-hover.png" class="img-hov"></p>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-12">
+						<p class="ovalo">Paragraph <img src="./assets/Icons/PNGs/paragraph-regular.png" class="img-reg"><img src="assets/Icons/PNGs/paragraph-hover.png" class="img-hov2"></p>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-12">
+						<p class="ovalo">Check Boxes <img src="./assets/Icons/PNGs/checkboxes-regular.png" class="img-reg"><img src="assets/Icons/PNGs/checkboxes-hover.png" class="img-hov3"></p>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-12">
+						<p class="ovalo">Multiple Choice <img src="./assets/Icons/PNGs/multiple-regular.png" class="img-reg"><img src="assets/Icons/PNGs/multiple-hover.png" class="img-hov4"></p>
+					</div>
 				</div>
 			</div>
 		</section>
