@@ -2,55 +2,105 @@
 <html>
 	<head>
 		<meta charset="utf-8">
+		<meta name="viewport" content="width=100%, initial-scale=1">
+		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<link href="https://fonts.googleapis.com/css?family=Playfair+Display|Roboto:300,400" rel="stylesheet">
 		<title></title>
+		
 	</head>
 	<body>
-	    <header>
-	    	<nav>
-				<div class="logo">
-					<img src="assets/Icons/PNGs/logo-white.png">
-				</div>
-			   	<a href="#">Login</a>
-			</nav>
-			<div class="top-content">
-			  	<div class="h-content">
-			   		<h1>Create beautiful forms</h1>
-			   		<p>Increase response rate & quality with design that delights</p>
-			   		<button>sign up</button>
-			   	</div>
-			   	<div class="h-image">
-				   	<img src="assets/Images/image-devices.png">
-				</div>
+	    <header class="container-fluid">
+	    	<div class="container">
+		    	<nav class="row">
+					<div class="logo col-md-11 col-sm-11 col-xs-11">
+						<img src="assets/Icons/PNGs/logo-fullColor.png">
+					</div>
+				   	<div class="col-md-1 col-sm-1 col-xs-1"><a href="#"><span class="login">Login</span></a><img src="./assets/Icons/PNGs/burger-regular.png" class="login-burger"></div>
+				</nav>
 			</div>
 	    </header>
-	    <section class="wired">
-	    	<h4>What the market is saying</h4>
-	    	<h1>84% of all companies use data colection software that hasn't been updated in at least 6 months."</h1>
-	    	<h3>- Wired</h3>
-	    </section>
-	    <section class="design-collect">
-	    	<div class="d-c">
-	    		<div class="design">
-		    	<h4>Design surveys with a variety of question formats</h4>
-		    	<div class="design-img">
-		    		<img src="assets/Images/image-questions.png">
-		    	</div>
-		    	</div>
-		    	<div class="collect">
-		    		<h4>Collect data in tidy spreadsheets</h4>
-		    		<div class="collect-img">
-		    			<img src="assets/Images/image-spreadsheets.png">
-		    		</div>
-		    	</div>
-	    	</div>
-	    </section>
-	    <footer>
-		    <a href="">About</a>
-		    <a href="">Terms & Conditions</a>
-		    <a href="">Privacy</a>
-		    <a href="">Contact Us</a>
-	    </footer>
+	    <nav class="container-fluid t-nav">
+	    	<div class="container">
+				<ul class="row">
+					<li class="col-md-1"><a href="">edit</a></li>
+					<li class="col-md-1"><a href="">view</a></li>
+					<li class="col-md-1"><a href="">responses</a></li>
+				</ul>
+			</div>
+		</nav>
+
+		<section class="container">
+			<div class="prefer row">
+				<div class="col-md-8">
+					<h1>What kind of restaurants do you prefer?</h1>
+					<p>A set of questions exploring qualities of your favorite restaurants</p>
+				</div>
+			</div>
+			<div class="name row">
+				<div class="col-md-8">
+					<h3>What is your name?</h3>
+					<input type="text" name="name" id="nombre">
+					<h4>Your full name please.</h4>
+				</div>
+			</div>
+			<div class="quality row">
+				<div class="col-md-8">
+					<h3>What is the single most important quality of a restaurant?</h3>
+					<ul>
+						<li><input type="radio" id="loud"> <label for="loud">How loud or quiet it is</label></li>
+						<li><input type="radio" id="drink"> <label for="drink">The drink selection</label></li>
+						<li><input type="radio" id="f-quality"> <label for="f-quality">The quality of the food</label></li>
+						<li><input type="radio" id="dessert"> <label for="dessert">The dessert</label></li>
+						<li><input type="radio" id="other"> <label for="other">Other:</label> <input type="text" name="other" id="t-other"></li>
+					</ul>
+					<h4>Think hard! You can only choose one.</h4>
+				</div>
+			</div>
+			<div class="grey-sec row">
+				<div class="col-md-8 col-sm-12 col-xs-12">
+					<form>
+						<ul class="container">
+							<li class="row">
+								<label class="col-md-4 col-sm-10 col-xs-12">Question Title</label>
+								<input type="text" name="question" placeholder="Describe the qualities of your favorite restaurant" class="col-md-7 col-sm-10 col-xs-12 input-class">
+							</li>
+							<li class="row">
+								<label class="col-md-4 col-sm-10 col-xs-12">Help Text</label>
+								<input type="text" name="help" placeholder="Be as descriptive as possible" class="col-md-7 col-sm-10 col-xs-12 input-class">
+							</li>
+							<li class="row dropdown">
+								<label class="col-md-4 col-sm-10 col-xs-12">Question type</label>
+								<input type="dropdown" name="select" placeholder="Select" class="col-md-7 col-sm-10 col-xs-12 input-class">
+							</li>
+							<button class="col-md-2 col-sm-10 col-xs-12 save">Save</button>
+						</ul>
+					</form>
+				</div>
+			</div>
+
+			<div class="add-q row">
+				<div class="col-md-11">
+					<h3>Add a question</h3>
+				</div>
+				<div class="row">
+					<div class="col-md-3 col-sm-6 col-xs-12">
+						<p class="ovalo">Single Line <img src="./assets/Icons/PNGs/singleLine-regular.png" class="img-reg"><img src="assets/Icons/PNGs/singleLine-hover.png" class="img-hov"></p>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-12">
+						<p class="ovalo">Paragraph <img src="./assets/Icons/PNGs/paragraph-regular.png" class="img-reg"><img src="assets/Icons/PNGs/paragraph-hover.png" class="img-hov2"></p>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-12">
+						<p class="ovalo">Check Boxes <img src="./assets/Icons/PNGs/checkboxes-regular.png" class="img-reg"><img src="assets/Icons/PNGs/checkboxes-hover.png" class="img-hov3"></p>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-12">
+						<p class="ovalo">Multiple Choice <img src="./assets/Icons/PNGs/multiple-regular.png" class="img-reg"><img src="assets/Icons/PNGs/multiple-hover.png" class="img-hov4"></p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 	</body>
 </html>
